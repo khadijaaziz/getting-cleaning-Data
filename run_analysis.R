@@ -60,5 +60,5 @@ DataF <- aggregate(. ~subjectId + activityId, setWithActivityNames, mean)
 DataF <- secTidySet[order(secTidySet$subjectId, secTidySet$activityId),]
 
 #save data
-
 write.table(DataF, "TidyData.txt", row.name=FALSE)
+
