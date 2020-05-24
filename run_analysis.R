@@ -61,4 +61,4 @@ DataF <- secTidySet[order(secTidySet$subjectId, secTidySet$activityId),]
 
 #save data
 
-write.table(secTidySet, "TidyData.txt", row.name=FALSE)
+write.table(DataF, "TidyData.txt", row.name=FALSE)
